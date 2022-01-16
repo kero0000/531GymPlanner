@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Set1RM">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:text="Set your 1RM here"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/squat1RM"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/loginpageedittextcustom"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Enter squat 1RM in kg"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greeting" />
+
+    <EditText
+        android:id="@+id/bench1RM"
+        android:layout_width="257dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/loginpageedittextcustom"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Enter Bench 1RM in kg"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squat1RM" />
+
+    <EditText
+        android:id="@+id/deadlift1RM"
+        android:layout_width="266dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/loginpageedittextcustom"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="Enter Deadlift 1RM in kg"
+        android:inputType="numberDecimal"
+        android:padding="6dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bench1RM" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="31dp"
+        app:layout_constraintEnd_toStartOf="@+id/squat1RM"
+        app:layout_constraintTop_toBottomOf="@+id/greeting"
+        app:srcCompat="@drawable/squat_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="86dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/bench1RM"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/bench_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/deadlift1RM"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/deadlift_icon" />
+
+    <Button
+        android:id="@+id/saveRM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="34dp"
+        android:text="Start New Programme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deadlift1RM" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
