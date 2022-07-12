@@ -18,12 +18,13 @@ public class ViewPlan extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_plan);
 
-        Button week1, week2, week3, deload, nextcycle;
+        Button week1, week2, week3, deload, nextcycle, prevcycle;
         week1 = findViewById(R.id.week1);
         week2 = findViewById(R.id.week2);
         week3 = findViewById(R.id.week3);
         deload = findViewById(R.id.deload);
         nextcycle = findViewById(R.id.nextcycle);
+        prevcycle = findViewById(R.id.prevcycle);
 
         week1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +66,14 @@ public class ViewPlan extends AppCompatActivity{
             }
         });
 
+        prevcycle.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                prevCycle();
+                Toast.makeText(ViewPlan.this, "Previous cycle", Toast.LENGTH_SHORT).show();
+            }
+        }));
+
     }
 
     private void nextCycle() {
@@ -78,6 +87,25 @@ public class ViewPlan extends AppCompatActivity{
         squatMax += 5;
         benchMax += 5;
         deadliftMax += 5;
+
+        editor.putFloat("squatMax", squatMax);
+        editor.putFloat("benchMax", benchMax);
+        editor.putFloat("deadliftMax", deadliftMax);
+
+        editor.apply();
+    }
+
+    private void prevCycle() {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        float squatMax = prefs.getFloat("squatMax", 0);
+        float benchMax = prefs.getFloat("benchMax", 0);
+        float deadliftMax = prefs.getFloat("deadliftMax", 0);
+
+        squatMax -= 5;
+        benchMax -= 5;
+        deadliftMax -= 5;
 
         editor.putFloat("squatMax", squatMax);
         editor.putFloat("benchMax", benchMax);

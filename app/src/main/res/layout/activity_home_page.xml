@@ -25,13 +25,9 @@
         android:id="@+id/PlanButton"
         android:layout_width="115dp"
         android:layout_height="108dp"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="191dp"
-        android:layout_marginEnd="292dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="188dp"
         android:background="@drawable/weight"
-        app:layout_constraintBottom_toTopOf="@+id/PlanText"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

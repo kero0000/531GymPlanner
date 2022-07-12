@@ -65,13 +65,13 @@ public class PlanDetails extends AppCompatActivity {
         double deadliftMax85 = calculateWeight(0.85, deadliftMax);
 
         // put numbers on screen
-        String squatText = "5x "+squatMax50+"\n3x "+squatMax60+"\n5x "+squatMax65+"\n5x "+squatMax75+"\n5x "+squatMax85+"\n5+ "+squatMax65;
+        String squatText = "5x "+(int)squatMax50+"\n3x "+(int)squatMax60+"\n5x "+(int)squatMax65+"\n5x "+(int)squatMax75+"\n5x "+(int)squatMax85+"\n5+ "+(int)squatMax65;
         squatPlanDetails.setText(squatText);
 
-        String benchText = "5x "+benchMax50+"\n3x "+benchMax60+"\n5x "+benchMax65+"\n5x "+benchMax75+"\n5x "+benchMax85+"\n5+ "+benchMax65;
+        String benchText = "5x "+(int)benchMax50+"\n3x "+(int)benchMax60+"\n5x "+(int)benchMax65+"\n5x "+(int)benchMax75+"\n5x "+(int)benchMax85+"\n5+ "+(int)benchMax65;
         benchPlanDetails.setText(benchText);
 
-        String deadliftText = "5x "+deadliftMax50+"\n3x "+deadliftMax60+"\n5x "+deadliftMax65+"\n5x "+deadliftMax75+"\n5x "+deadliftMax85+"\n5+ "+deadliftMax65;
+        String deadliftText = "5x "+(int)deadliftMax50+"\n3x "+(int)deadliftMax60+"\n5x "+(int)deadliftMax65+"\n5x "+(int)deadliftMax75+"\n5x "+(int)deadliftMax85+"\n5+ "+(int)deadliftMax65;
         deadliftPlanDetails.setText(deadliftText);
 
         //put max on screen too
@@ -112,14 +112,17 @@ public class PlanDetails extends AppCompatActivity {
         double deadliftMax80 = calculateWeight(0.8, deadliftMax);
         double deadliftMax90 = calculateWeight(0.9, deadliftMax);
 
+
+
+
         // put numbers on screen
-        String squatText = "5x "+squatMax50+"\n3x "+squatMax60+"\n3x "+squatMax70+"\n5x "+squatMax80+"\n3x "+squatMax90+"\n5+ "+squatMax70;
+        String squatText = "5x "+(int)squatMax50+"\n3x "+(int) squatMax60+"\n3x "+(int)squatMax70+"\n3x "+(int)squatMax80+"\n3x "+(int)squatMax90+"\n5+ "+(int)squatMax70;
         squatPlanDetails.setText(squatText);
 
-        String benchText = "5x "+benchMax50+"\n3x "+benchMax60+"\n3x "+benchMax70+"\n3x "+benchMax80+"\n3x "+benchMax90+"\n5+ "+benchMax70;
+        String benchText = "5x "+(int)benchMax50+"\n3x "+(int)benchMax60+"\n3x "+(int) benchMax70+"\n3x "+(int)benchMax80+"\n3x "+(int)benchMax90+"\n5+ "+(int)benchMax70;
         benchPlanDetails.setText(benchText);
 
-        String deadliftText = "5x "+deadliftMax50+"\n3x "+deadliftMax60+"\n3x "+deadliftMax70+"\n3x "+deadliftMax80+"\n3x "+deadliftMax90+"\n5+ "+deadliftMax70;
+        String deadliftText = "5x "+(int)deadliftMax50+"\n3x "+(int)deadliftMax60+"\n3x "+(int)deadliftMax70+"\n3x "+(int)deadliftMax80+"\n3x "+(int)deadliftMax90+"\n5+ "+(int)deadliftMax70;
         deadliftPlanDetails.setText(deadliftText);
 
         //put max on screen too
@@ -160,13 +163,13 @@ public class PlanDetails extends AppCompatActivity {
         double deadliftMax95 = calculateWeight(0.95, deadliftMax);
 
         // put numbers on screen
-        String squatText = "5x "+squatMax50+"\n5x "+squatMax60+"\n5x "+squatMax75+"\n3x "+squatMax85+"\n1x "+squatMax95+"\n5+ "+squatMax75;
+        String squatText = "5x "+(int)squatMax50+"\n5x "+(int)squatMax60+"\n5x "+(int)squatMax75+"\n3x "+(int)squatMax85+"\n1x "+(int)squatMax95+"\n5+ "+(int)squatMax75;
         squatPlanDetails.setText(squatText);
 
-        String benchText = "5x "+benchMax50+"\n5x "+benchMax60+"\n5x "+benchMax75+"\n3x "+benchMax85+"\n1x "+benchMax95+"\n5+ "+benchMax75;
+        String benchText = "5x "+(int)benchMax50+"\n5x "+(int)benchMax60+"\n5x "+(int)benchMax75+"\n3x "+(int)benchMax85+"\n1x "+(int)benchMax95+"\n5+ "+(int)benchMax75;
         benchPlanDetails.setText(benchText);
 
-        String deadliftText = "5x "+deadliftMax50+"\n5x "+deadliftMax60+"\n5x "+deadliftMax75+"\n3x "+deadliftMax85+"\n1x "+deadliftMax95+"\n5+ "+deadliftMax75;
+        String deadliftText = "5x "+(int)deadliftMax50+"\n5x "+(int)deadliftMax60+"\n5x "+(int)deadliftMax75+"\n3x "+(int)deadliftMax85+"\n1x "+(int)deadliftMax95+"\n5+ "+(int)deadliftMax75;
         deadliftPlanDetails.setText(deadliftText);
 
         //put max on screen too
@@ -199,13 +202,13 @@ public class PlanDetails extends AppCompatActivity {
         double deadliftMax65 = calculateWeight(0.65, deadliftMax);
 
         // put numbers on screen
-        String squatText = "5x "+squatMax50+"\n5x "+squatMax65;
+        String squatText = "5x "+(int)squatMax50+"\n5x "+(int)squatMax65;
         squatPlanDetails.setText(squatText);
 
-        String benchText = "5x "+benchMax50+"\n5x "+benchMax65;
+        String benchText = "5x "+(int)benchMax50+"\n5x "+(int)benchMax65;
         benchPlanDetails.setText(benchText);
 
-        String deadliftText = "5x "+deadliftMax50+"\n5x "+deadliftMax65;
+        String deadliftText = "5x "+(int)deadliftMax50+"\n5x "+(int)deadliftMax65;
         deadliftPlanDetails.setText(deadliftText);
 
         //put max on screen too
